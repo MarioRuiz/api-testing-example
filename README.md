@@ -9,7 +9,7 @@ To generate the Request Hashes from a **Swagger** / **Open API file**, run the f
 
 # Installation
 
-1. Install Ruby >=2.4. Recommended last stable release. To see which version you already have installed: `ruby -v`
+1. Install Ruby >=2.4. Recommended last 2.5 stable release. To see which version you already have installed: `ruby -v`
     * [Ruby Installation](https://www.ruby-lang.org/en/documentation/installation/)
 
 2. Install the libraries we use by running from root folder:
