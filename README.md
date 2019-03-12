@@ -6,6 +6,7 @@ For the examples we will be testing the [**Uber**](https://api.uber.com) API usi
 
 To generate the Request Hashes from a **Swagger** / **Open API file**, run the file ./utils/import_swagger.rb or use the **open_api_import** command line executable.
 
+If you want to automatically generate RSpec tests for every end point of your Swagger file, use the create_tests gem: https://github.com/MarioRuiz/create_tests
 
 # Installation
 
@@ -29,6 +30,7 @@ To generate the Request Hashes from a **Swagger** / **Open API file**, run the f
   * [nice_http](https://github.com/MarioRuiz/nice_http)
   * [nice_hash](https://github.com/MarioRuiz/nice_hash)
   * [open_api_import](https://github.com/MarioRuiz/open_api_import)
+  * [create_tests](https://github.com/MarioRuiz/create_tests)
 
 # Running tests
 
