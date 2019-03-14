@@ -6,8 +6,9 @@ include Requests
 # This is an example using the request hash: create_user_ex1
 RSpec.describe ExampleReqres, '#create_user_ex1' do
 
-    before do
+    before do |example|
         @http = NiceHttp.new(REQREST)
+        @http.logger.info("\n\n#{"=" * 100}\nTest: #{example.description}\n#{"-" * 100}")
     end
 
     context 'when adding a good random user' do

@@ -4,8 +4,9 @@ include Requests
 
 RSpec.describe ExampleReqres, '#list_users' do
 
-    before do
+    before do |example|
         @http = NiceHttp.new(REQREST)
+        @http.logger.info("\n\n#{"=" * 100}\nTest: #{example.description}\n#{"-" * 100}")
     end
 
     it 'returns 200 code and OK on response' do

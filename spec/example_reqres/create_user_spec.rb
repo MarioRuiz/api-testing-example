@@ -4,8 +4,9 @@ include Requests
 
 RSpec.describe ExampleReqres, '#create_user' do
 
-    before do
+    before do |example|
         @http = NiceHttp.new(REQREST)
+        @http.logger.info("\n\n#{"=" * 100}\nTest: #{example.description}\n#{"-" * 100}")
     end
 
     context 'when adding a good user' do

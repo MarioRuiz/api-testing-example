@@ -3,8 +3,9 @@ require_relative 'fixtures/coords'
 include Swagger::UberApi::V1_0_0
 
 RSpec.describe Products, '#list_products' do
-  before do
+  before do |example|
     @http = NiceHttp.new(UBER)
+    @http.logger.info("\n\n#{"=" * 100}\nTest: #{example.description}\n#{"-" * 100}")
   end
 
   context 'correct latitude and longitude, Madrid' do

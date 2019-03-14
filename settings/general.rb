@@ -13,14 +13,15 @@ require_relative 'local'
 ROOT_DIR = Pathname.new(__FILE__).join("..").join("..")
 # HOST to test reqres API
 REQREST = { host: 'https://reqres.in', 
-            headers: {}, 
-            log: 'http_reqres.log'
+            headers: {}
           }
 # HOST to test Uber API
 UBER = { host: ENV['HOST'], 
-         headers: { Authorization: "Token #{ENV['UBER_TOKEN']}"},
-         log: 'http_uber.log'
+         headers: { Authorization: "Token #{ENV['UBER_TOKEN']}"}
        }
+
+# the logs will be stored on the name of the file we run and extension .log
+NiceHttp.log = :file_run
 
 # Requests
 require_relative '../requests/example_reqres'
